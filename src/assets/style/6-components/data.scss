@@ -1,0 +1,42 @@
+@import '@/assets/style/1-settings/color.scss';
+
+.c-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+
+    padding: .5rem 1rem;
+    min-height: 156px;
+
+    border-radius: 8px;
+    background: $card-bg;
+}
+
+.c-data__temperature {
+    font-size: 56px;
+    line-height: 56px;
+    padding-top: 16px;
+    margin: unset;
+}
+
+.c-data__windspeed {
+    font-size: 12px;
+    font-weight: 200;
+    margin: unset;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.c-data__location {
+    border-top: 1px solid white;
+    padding-top: 24px;
+    width: 100%;
+    margin: unset;
+    font-size: 16px;
+    font-weight: 200;
+}

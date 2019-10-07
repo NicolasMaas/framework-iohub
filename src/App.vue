@@ -1,29 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <container>
+            <row class="o-row--header">
+                <h1>IO Hub</h1>
+
+                <nav class="c-nav">
+                    <router-link class="c-nav__link" to="/">Home</router-link>
+                    <router-link class="c-nav__link" to="/settings">Settings</router-link>
+                </nav>
+            </row>
+        </container>
+
+        <router-view />
+
+        <app-footer />
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import Container from "@/components/layout/Container";
+import Row from "@/components/layout/Row";
+import AppFooter from "@/components/Footer";
+
+export default {
+    components: {
+        Container,
+        Row,
+        AppFooter
     }
-  }
-}
+};
+</script>
+
+<style lang="scss">
+@import "@/assets/style/screen.scss";
+@import "@/assets/style/6-components/navigation.scss";
 </style>

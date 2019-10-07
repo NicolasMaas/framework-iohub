@@ -1,0 +1,24 @@
+$black: #191F28;
+$text-color: #fffdff;
+
+$card-bg: #252C37;
+
+// GRADIENTS
+$card-gradient: (card-1--step-1: #fd99b6,
+    card-1--step-2: #8640e9,
+    card-2--step-1: #4ecdb0,
+    card-2--step-2: #407ace);
+
+.card1 {
+    background: linear-gradient(map-get($card-gradient, card-1--step-1),
+            map-get($card-gradient, card-1--step-2));
+}
+
+.card2 {
+    background: linear-gradient(map-get($card-gradient, card-2--step-1),
+            map-get($card-gradient, card-2--step-2));
+}
+
+
+// CARD BACKGROUND
+// #252c37

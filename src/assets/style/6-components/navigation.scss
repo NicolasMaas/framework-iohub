@@ -1,0 +1,10 @@
+// .c-nav {}
+
+.c-nav__link {
+    color: $text-color;
+    text-decoration: none;
+
+    &+& {
+        margin-left: 1rem;
+    }
+}
